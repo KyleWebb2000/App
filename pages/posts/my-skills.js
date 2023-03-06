@@ -2,13 +2,13 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
 
-export default function FirstPost() {
+export default function MySkills() {
   return (
     <Layout>
       <Head>
-        <title>First Post</title>
+        <title>My Skills</title>
       </Head>
-      <h1>First Post</h1>
+      <h1>My Skills</h1>
       <h2>
         <Link href="/">Back to home</Link>
       </h2>

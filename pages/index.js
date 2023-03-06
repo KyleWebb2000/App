@@ -22,12 +22,11 @@ export default function Home({ allPostsData }) {
       </Head>
       <section className={utilStyles.headingMd}>      
         <h1>A Junior Software Engineer</h1>
-        <p>
-        This is my first Next.js App!
-        </p>
-        <p>
-        <Link href="/posts/first-post">My First Post</Link>
-        </p>
+        <p>This is my first Next.js App!</p>
+        <p><Link href="/posts/my-skills">My Skills</Link></p>
+        <p><Link href="/posts/my-work">My Work</Link></p>
+        <p><Link href="/posts/about-me">About Me</Link></p>
+        <p><Link href="/posts/contact-me">Contact Me</Link></p>
       </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
