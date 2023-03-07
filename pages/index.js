@@ -1,9 +1,11 @@
 import Head from 'next/head';
 import Layout, { siteTitle } from '../components/layout';
 import utilStyles from '../styles/utils.module.css';
+import homeStyles from '../styles/home.module.css';
 import Link from 'next/link';
 import { getSortedPostsData } from '../lib/posts';
 import Date from '../components/date';
+import Image from 'next/image';
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -20,16 +22,23 @@ export default function Home({ allPostsData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>      
-        <h1>A Junior Software Engineer</h1>
-        <p>This is my first Next.js App!</p>
-        <p><Link href="/posts/my-skills">My Skills</Link></p>
-        <p><Link href="/posts/my-work">My Work</Link></p>
-        <p><Link href="/posts/about-me">About Me</Link></p>
-        <p><Link href="/posts/contact-me">Contact Me</Link></p>
+
+      <section className={homeStyles.nav}>
+        <Link href="/posts/my-skills" style={{textDecoration: 'none'}}>
+        <div className={`${homeStyles.navItem} ${homeStyles.mySkills}`}>MY SKILLS</div>
+        </Link>   
+        <Link href="/posts/my-work" style={{textDecoration: 'none'}}>
+          <div className={`${homeStyles.navItem} ${homeStyles.myWork}`}>MY WORK</div>
+        </Link>
+        <Link href="/posts/about-me" style={{textDecoration: 'none'}}>
+          <div className={`${homeStyles.navItem} ${homeStyles.aboutMe}`}>ABOUT ME</div>
+        </Link>
+        <Link href="/posts/contact-me" style={{textDecoration: 'none'}}>
+          <div className={`${homeStyles.navItem} ${homeStyles.contactMe}`}>CONTACT ME</div>
+        </Link>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+      <section className={`${utilStyles.headingMd} ${homeStyles.blogContainer}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
