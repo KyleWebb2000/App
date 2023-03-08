@@ -24,17 +24,36 @@ export default function Home({ allPostsData }) {
       </Head>
 
       <section className={homeStyles.nav}>
-        <Link href="/posts/my-skills" style={{textDecoration: 'none'}}>
-        <div className={`${homeStyles.navItem} ${homeStyles.mySkills}`}>MY SKILLS</div>
+        <Link href="/posts/my-skills">
+        {/* <div className={`${homeStyles.navItem} ${homeStyles.mySkills}`}>MY SKILLS</div> */}
+          <div className={`${homeStyles.navItem} ${homeStyles.mySkills}`}>
+            <Image
+                priority
+                src="/images/skills.webp"
+                className={homeStyles.image}
+                height={500}
+                width={500}
+              />      
+              <h2 className={homeStyles.imageTitle}>My Skils</h2>
+          </div>
         </Link>   
-        <Link href="/posts/my-work" style={{textDecoration: 'none'}}>
+        <Link href="/posts/my-work">
           <div className={`${homeStyles.navItem} ${homeStyles.myWork}`}>MY WORK</div>
         </Link>
-        <Link href="/posts/about-me" style={{textDecoration: 'none'}}>
+        <Link href="/posts/about-me">
           <div className={`${homeStyles.navItem} ${homeStyles.aboutMe}`}>ABOUT ME</div>
         </Link>
-        <Link href="/posts/contact-me" style={{textDecoration: 'none'}}>
-          <div className={`${homeStyles.navItem} ${homeStyles.contactMe}`}>CONTACT ME</div>
+        <Link href="/posts/contact-me">
+          <div className={`${homeStyles.navItem} ${homeStyles.contactMe}`}>
+            <Image
+                priority
+                src="/images/contactMe.png"
+                className={homeStyles.image}
+                height={500}
+                width={500}
+            />      
+            <h2 className={homeStyles.imageTitle}>Contact Me</h2>
+          </div>
         </Link>
       </section>
 
