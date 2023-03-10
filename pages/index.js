@@ -25,8 +25,19 @@ export default function Home({ allPostsData }) {
 
       <section className={homeStyles.nav}>
         <Link href="/posts/my-skills">
-        {/* <div className={`${homeStyles.navItem} ${homeStyles.mySkills}`}>MY SKILLS</div> */}
-          <div className={`${homeStyles.navItem} ${homeStyles.mySkills}`}>
+          <div className={homeStyles.navItem}>
+            <Image
+                priority
+                src="/images/code.png"
+                className={homeStyles.image}
+                height={500}
+                width={500}
+              />      
+              <h2 className={homeStyles.imageTitle}>MY SKILLS</h2>
+          </div>
+        </Link>   
+        <Link href="/posts/my-work">
+        <div className={homeStyles.navItem}>
             <Image
                 priority
                 src="/images/skills.webp"
@@ -34,17 +45,23 @@ export default function Home({ allPostsData }) {
                 height={500}
                 width={500}
               />      
-              <h2 className={homeStyles.imageTitle}>My Skils</h2>
+              <h2 className={homeStyles.imageTitle}>MY WORK</h2>
           </div>
-        </Link>   
-        <Link href="/posts/my-work">
-          <div className={`${homeStyles.navItem} ${homeStyles.myWork}`}>MY WORK</div>
         </Link>
         <Link href="/posts/about-me">
-          <div className={`${homeStyles.navItem} ${homeStyles.aboutMe}`}>ABOUT ME</div>
+        <div className={homeStyles.navItem}>
+            <Image
+                priority
+                src="/images/aboutme.jpg"
+                className={homeStyles.image}
+                height={500}
+                width={500}
+              />      
+              <h2 className={homeStyles.imageTitle}>ABOUT ME</h2>
+          </div>
         </Link>
         <Link href="/posts/contact-me">
-          <div className={`${homeStyles.navItem} ${homeStyles.contactMe}`}>
+          <div className={homeStyles.navItem}>
             <Image
                 priority
                 src="/images/contactMe.png"
@@ -52,7 +69,7 @@ export default function Home({ allPostsData }) {
                 height={500}
                 width={500}
             />      
-            <h2 className={homeStyles.imageTitle}>Contact Me</h2>
+            <h2 className={homeStyles.imageTitle}>CONTACT ME</h2>
           </div>
         </Link>
       </section>

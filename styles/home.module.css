@@ -24,25 +24,14 @@
 .image{
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
 }
 
 .imageTitle{
     z-index: 2;
     position: absolute;
     color: white;
-}
-
-.mySkills{
-    background-color: #caffbf;
-}
-.myWork{
-    background-color: #fdffb3;
-}
-.aboutMe{
-    background-color: #a0c4ff;
-}
-.contactMe{
-    background-color: #9bf6ff;
 }
 
 /* ---- Blog ---- */
