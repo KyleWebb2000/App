@@ -1,27 +1,48 @@
 .container{
-    height: 800px;
     width: 100%;
-    background: #f2f2f2;
-}
-
-.topContainer{
-    height: 450px;
-    width: 100%;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.div1{
-    background-color: red;
-    height: 100%;
-    width: 50%;
+.skillDiv{
+    height: 200px;  
+    flex: 1 1 35%;
+    margin: .5%;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px -1px;
 }
-.div2{
-    background-color: green;
-    height: 100%;
-    width: 50%;
+
+.skillDiv:nth-child(2){
+    flex: 0 1 63%;
 }
-.div3{
-    background-color: blue;
+
+.skillDiv:nth-child(4n -1){
+    flex-basis: 63%;
+}
+
+.skillDiv:last-child{
+    flex-basis: 99%;
+}
+
+.skillImg{
+    object-fit: cover;
     width: 100%;
-    height: 350px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease-out;
+}
+
+.skillImg:hover{
+    transform: scale(1.1);
+    transition: all .5s ease-in-out;
+    overflow: hidden;
+}
+
+.skillDiv:hover{
+    filter: brightness(0.5);
+    overflow: hidden;
 }
