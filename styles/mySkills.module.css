@@ -7,23 +7,11 @@
 
 .skillDiv{
     height: 200px;  
-    flex: 1 1 35%;
-    margin: .5%;
+    flex: 1 1 99%;
+    margin: .5em .5%;
     background-color: white;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px -1px;
-}
-
-.skillDiv:nth-child(2){
-    flex: 0 1 63%;
-}
-
-.skillDiv:nth-child(4n -1){
-    flex-basis: 63%;
-}
-
-.skillDiv:last-child{
-    flex-basis: 99%;
 }
 
 .skillImg{
@@ -45,4 +33,23 @@
 .skillDiv:hover{
     filter: brightness(0.5);
     overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+    .skillDiv{
+        flex: 1 1 35%;
+        margin: .5%;
+    }
+    
+    .skillDiv:nth-child(2){
+        flex: 0 1 63%;
+    }
+    
+    .skillDiv:nth-child(4n -1){
+        flex-basis: 63%;
+    }
+    
+    .skillDiv:last-child{
+        flex-basis: 99%;
+    }
 }
