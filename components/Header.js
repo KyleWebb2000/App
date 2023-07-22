@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
-import headerStyles from '../../Nextjs-project/styles/utils.module.css';
+import headerStyles from '../styles/utils.module.css';
 import Link from 'next/link'
 
 function Header({title}){
