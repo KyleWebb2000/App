@@ -1,11 +1,14 @@
 ---
-title: 'Two Forms of Pre-rendering'
-date: '2020-01-01'
+title: 'Key Features of Next.JS'
+date: '2023-07-15'
 ---
 
-Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
+Key features of Next.js
 
-- **Static Generation** is the pre-rendering method that generates the HTML at **build time**. The pre-rendered HTML is then _reused_ on each request.
-- **Server-side Rendering** is the pre-rendering method that generates the HTML on **each request**.
+**Server-Side Rendering (SSR):** Next.js allows you to perform server-side rendering, which means that the initial HTML content is generated on the server and sent to the client, improving performance and search engine optimization (SEO).
 
-Importantly, Next.js lets you **choose** which pre-rendering form to use for each page. You can create a "hybrid" Next.js app by using Static Generation for most pages and using Server-side Rendering for others.
+**Static Site Generation (SSG):** It supports static site generation, where pages are pre-rendered at build time, resulting in fast-loading, static HTML pages that can be deployed to a content delivery network (CDN).
+
+**API Routes:** Next.js provides an easy way to create serverless API routes alongside your application. This allows you to handle server-side logic and data processing without setting up a separate server.
+
+**File System Routing:** Next.js follows a file-based routing system, where the file structure in the pages directory automatically defines the application's routes. For example, a file named about.js inside the pages directory would create the /about route.
