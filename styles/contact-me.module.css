@@ -1,6 +1,38 @@
-.header{
+.methodContainer{
+    width: 90%;
+    margin: 2em auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 11px -1px;
+    padding: 1em;
     display: flex;
-    width: 100%;
-    justify-content: space-between;
     align-items: center;
+    font-size: 1em;
+    color: black;
+}
+
+.methodContainer:hover{
+    background-color: #0070f3;
+    color: white;
+}
+
+.methodIcon{
+    width: 20%; 
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 550px) {
+    .methodContainer{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    .methodContainer{
+        width: 40%;
+    }
+    
+    .methodIcon{
+        width: 30%; 
+    }
 }

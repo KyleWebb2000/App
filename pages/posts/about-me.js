@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
+import Header from '../../components/Header';
 
 export default function AboutMe() {
   return (
@@ -8,10 +9,7 @@ export default function AboutMe() {
       <Head>
         <title>About Me</title>
       </Head>
-      <h1>What I Do</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
+      <Header title="About Me"/>
     </Layout>
   )
 }

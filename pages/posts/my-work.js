@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import Layout from '../../components/layout'
+import Head from 'next/head';
+import Layout from '../../components/layout';
+import Header from '../../components/Header';
 
 export default function MyWork() {
   return (
@@ -8,10 +8,7 @@ export default function MyWork() {
       <Head>
         <title>My Work</title>
       </Head>
-      <h1>My Work</h1>
-      <h2>
-        <Link href="/">Back to home</Link>
-      </h2>
+      <Header title="My Work"/>
     </Layout>
   )
 }

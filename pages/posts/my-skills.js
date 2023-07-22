@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Layout from '../../components/layout'
 import style from '../../styles/mySkills.module.css';
+import Header from '../../components/Header';
 
 export default function MySkills() {
   return (
@@ -9,9 +10,12 @@ export default function MySkills() {
       <Head>
         <title>My Skills</title>
       </Head>
-      <h1>My Skills</h1>
+
+      <Header title="My Skills"/>
+
+      <div className={style.contactInfo}>
       
-      <div className={style.container}>
+        <div className={style.container}>
           <div className={style.skillDiv}>
             <img src='https://images.ctfassets.net/c63hsprlvlya/IacLLeOBR5WCvdCPqKuff/6860b5cc464c4f54703a2befa3f706b4/nextjs3.webp' className={style.skillImg}/>
           </div>
@@ -39,6 +43,8 @@ export default function MySkills() {
           <div className={style.skillDiv}>
             <img src='https://snobmonkey.com/wp-content/uploads/2019/04/wordpress.png' className={style.skillImg}/>
           </div>
+        </div>
+        
       </div>
     </Layout>
   )
