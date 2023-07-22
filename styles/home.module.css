@@ -30,11 +30,13 @@
     overflow: hidden;
 }
 
-.image:hover{
-    transform: scale(1.1);
-    transition: all .5s ease-in-out;
-    overflow: hidden;
-    filter: brightness(0.8);
+.navItem:hover{
+    .image{
+        transform: scale(1.1);
+        transition: all .5s ease-in-out;
+        overflow: hidden;
+        filter: brightness(0.8);
+    }
 }
 
 .imageTitle{
