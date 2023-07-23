@@ -1,6 +1,6 @@
 ---
 title: 'Key Features of Next.JS'
-date: '2023-07-15'
+date: '2023-06-15'
 ---
 
 Key features of Next.js

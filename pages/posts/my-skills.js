@@ -32,7 +32,7 @@ export default function MySkills() {
             <img src='https://www.lambdatest.com/blog/wp-content/uploads/2018/11/JPG-2.jpg' className={style.skillImg}/>
           </div>
           <div className={style.skillDiv}>
-            <img src='https://smartdata.net/wp-content/uploads/2020/01/Salesforce-Lightning-logo.png' className={style.skillImg}/>
+            <img src='https://www.rolustech.com/wp-content/uploads/2018/09/20082018061152lightning.jpg' className={style.skillImg}/>
           </div>
           <div className={style.skillDiv}>
             <img src='https://geekflare.com/wp-content/uploads/2020/03/docker-security.jpg' className={style.skillImg}/>
